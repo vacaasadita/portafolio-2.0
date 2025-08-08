@@ -29,7 +29,7 @@
 
 @media (max-width:600px) {
   .contacto__formulario {
-    width: 85%;
+    width: 95%;
   }
 
   .contacto__titulo {
@@ -58,7 +58,7 @@
   }
 
   .contacto__contenido {
-    min-height: calc(100vh - 120px);
+    padding: 10px 0 ;
   }
 }
 
