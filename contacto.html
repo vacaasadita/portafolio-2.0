@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="contanto__fijo--WhatsApp" href="https://wa.link/mxmie7">
+    <img class="fijo__WhatsApp--icon" src="img/whatsapp-web.webp" alt="">
+    <span class="fijo__WhatsApp--link">Contactame aqui</span>
+  </a>
+
+  <!-- ======= Encabezado fijo ======= -->
+  <header class="header__fijo">
+    <div class="header__fijo--marca">
+      <img class="header__fijo--logo" src="img/logo1.webp" alt="">
+      <p class="header__fijo--nombre">Zumea</p>
+    </div>
+    <!-- Navegación principal fija -->
+    <div class="header__fijo--navegacion">
+      <nav class="navegacion__fija">
+        <!-- Marca: logo + nombre -->
+        
+        <!-- <label class="label__amburguesa" for="menu__amburguesa">
+          <svg 
+            xmlns="http://www.w3.org/2000/svg" 
+            width="35" 
+            height="35" 
+            fill="currentColor" 
+            class="list__icon" 
+            viewBox="0 0 16 16">
+            <path 
+              fill-rule="evenodd" 
+              d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+          </svg>
+        </label>
+        <input class="menu__amburguesa" type="checkbox" id="menu__amburguesa"> -->
+        <ul class="navegacion__fija--lista">
+          <li class="navegacion__fija--item">
+            <a href="index.html" class="navegacion__fija--link">Inicio</a>
+          </li>
+          <li class="navegacion__fija--item">
+            <a href="#" class="navegacion__fija--link">Proyectos</a>
+          </li>
+          <li class="navegacion__fija--item">
+            <a href="#" class="navegacion__fija--link">Servicios</a>
+          </li>
+          <!-- <li class="navegacion__fija--item">
+            <a href="contacto.html" class="navegacion__fija--link">Contacto</a>
+          </li> -->
+        </ul>
+      </nav>
+    </div>
+
+  </header>
+  <!-- ======= Fin encabezado fijo ======= -->
+
+  <div class="espaciador">
+
+  </div>
+
+  <!-- ======= Sección de contacto ======= -->
+  <section id="section__contacto" class="contacto" aria-labelledby="legend__contacto">
+
+    <div class="contacto__contenido">
+
+      <!-- Formulario de contacto -->
+      <form class="contacto__formulario"
+            autocomplete="off"
+            action="https://formsubmit.co/juniorninoponce@gmail.com"
+            method="post">
+
+        <!-- Información del contacto -->
+        <fieldset class="formulario">
+          <legend class="formulario__legend">
+            Información de contacto<span class="punto">.</span>
+          </legend>
+
+          <!-- Grupo de campos -->
+          <div class="formulario__grupo">
+
+            <!-- Campo: Nombre -->
+            <label class="formulario__label">Nombre
+              <input class="formulario__input" name="nombre" type="text" placeholder="Jhon" required>
+            </label>
+
+            <!-- Campo: Apellido -->
+            <label class="formulario__label">Apellido
+              <input class="formulario__input" name="apellido" type="text" placeholder="Cena" required>
+            </label>
+
+            <!-- Campo: Teléfono -->
+            <label class="formulario__label">Número de teléfono
+              <input class="formulario__input" pattern="[0-9]" title="solo numeros" name="celular" type="tel " placeholder="111-222-333" required>
+            </label>
+
+            <!-- Campo: Email -->
+            <label class="formulario__label">Email
+              <input class="formulario__input" name="correo" type="email" placeholder="example@example.com" required>
+            </label>
+
+            <!-- Campo: Consulta -->
+            <label class="formulario__label">Ingresa tu consulta
+              <textarea class="formulario__textarea" name="solicitud" rows="5" placeholder="Ingresa tu consulta aquí" maxlength="300"></textarea>
+            </label>
+          </div>
+
+          <!-- Botón de enviar -->
+          <div class="formulario__grupo">
+            <button class="formulario__boton" type="submit">Contactar</button>
+          </div>
+        </fieldset>
+
+      </form>
+      <!-- Fin formulario de contacto -->
+
+    </div>
+  </section>
+  <!-- ======= Fin sección de contacto ======= -->
+
+</body>
+</html>

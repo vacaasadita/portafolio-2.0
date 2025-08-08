@@ -1,0 +1,77 @@
+@media (max-width:800px) {
+  .encabezado .encabezado__titulo  {
+    margin-top: 10px;
+  }
+
+  .encabezado .encabezado__descripcion {
+    margin: 20px auto 0 auto;
+  }
+
+  .navegacion {
+    margin-top: 50px;
+    padding: 0;
+  }
+
+  .navegacion__item {
+    display: block;
+    width: 90%;
+    max-width: 300px;
+    margin: 10px auto; /* Centrado, margen vertical de 10px */
+    padding: 5px 0;
+    box-sizing: border-box;
+  }
+
+  .navegacion__link {
+    margin-top: 5px;
+  }
+  
+}
+
+@media (max-width:600px) {
+  .contacto__formulario {
+    width: 85%;
+  }
+
+  .contacto__titulo {
+    padding: 20px 0 0 0;
+  }
+}
+
+@media (max-width:690px) {
+  .header__fijo--logo {
+    width: 40px;
+  }
+
+  .header__fijo{
+    flex-direction: column;
+    justify-content: center;
+    min-height: auto;
+    padding: 10px 0;
+  }
+
+  .navegacion__fija--item {
+    padding: 5px;
+  }
+
+  .espaciador {
+    height: 120px;
+  }
+
+  .contacto__contenido {
+    min-height: calc(100vh - 120px);
+  }
+}
+
+@media (max-width:770px) {
+  .contanto__fijo--WhatsApp {
+    display: none!important;
+  }
+
+  .fijo__WhatsApp--icon {
+    display: none;
+  }
+
+  .fijo__WhatsApp--link {
+    display: none;
+  }
+}

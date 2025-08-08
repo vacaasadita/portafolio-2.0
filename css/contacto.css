@@ -1,0 +1,101 @@
+.contacto {
+  box-sizing: border-box;
+  background-color: var(--secundary-color);
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.contacto__contenido {
+  min-height: calc(100vh - 80px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.contacto__formulario {
+  background-color: transparent;
+  max-width: 350px;
+  margin: auto;
+  box-shadow: 0 0 7px var(--secundary-color-dark);
+  border-radius: 20px;
+  height: 70vh;
+  overflow: auto;
+  scrollbar-width: none;
+}
+
+.formulario__grupo {
+  padding: 8px 7px;
+}
+
+.formulario__input, .formulario__textarea {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 6px 12px;
+  border: 1px solid #4f9;
+  box-shadow: 0 0 5px #0002;
+  background-color: transparent;
+  border-radius: 4px;
+  color: #ddd;
+  padding: 10px;
+}
+
+.formulario__input::placeholder, .formulario__textarea::placeholder {
+  color: var(--primary-color-dark);
+}
+
+.formulario__input:focus, .formulario__textarea:focus {
+  background-color: transparent;
+  outline: none;
+  color: #999;
+  font-size: 1rem;
+}
+
+.formulario__textarea {
+  min-height: 100%;
+  resize: none;
+  font-family: sans-serif;
+}
+
+.formulario__label {
+  font-size: clamp(1rem,5vw,1.3rem);
+  line-height: 2.2;
+  color: var(--secundary-color-dark);
+}
+
+.formulario {
+  border-radius: 10px;
+  border: 1px solid #666;
+  padding: 10px 7px 20px 7px;
+  margin: 20px;
+}
+
+.formulario__legend {
+  padding: 0 6px;
+  background-color: var(--secundary-color-dark);
+  border-radius: 10px;
+  text-align: center;
+  padding: 5px;
+  font-size: clamp(0.8rem, 5vw, 1.3rem);
+  color: var(--secundary-color);
+  font-weight: bolder;
+}
+
+.formulario__boton {
+  display: block;
+  margin: auto;
+  padding: 5px 15px;
+  font-size: clamp(1rem,5vw,1.4rem);
+  border-radius: 10px;
+  outline: none;
+  background-color: var(--primary-color);
+  color: var(--secundary-color-dark);
+  text-transform: uppercase;
+}
+
+.formulario__boton:hover {
+  background-color: var(--primary-color-dark);
+  font-weight: bold;
+  color: var(--primary-color);
+  cursor: url(../img/cursor__pointer.webp) ,pointer;
+} 

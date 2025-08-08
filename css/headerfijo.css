@@ -1,0 +1,106 @@
+.header__fijo {
+  background-color: var(--primary-color);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+  box-shadow: 0 0 15px var(--primary-color-dark);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 10px;
+  box-sizing: border-box;
+}
+
+.header__fijo--marca {
+  display: flex;
+  align-items: center;
+}
+
+.header__fijo--logo {
+  width: 60px;
+  margin: 0 15px;
+}
+
+.header__fijo--nombre {
+  color: var(--primary-color-dark);
+  font-family: "Batmfa",sans-serif;
+  font-size: clamp(1rem,5vw,2rem);
+}
+
+.header__fijo--navegacion {
+  border-radius: 10px;
+}
+
+.navegacion__fija--lista {
+  list-style: none;
+  display: inline-block;
+  padding: 0; 
+}
+
+.navegacion__fija--item {
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid var(--primary-color-dark);
+}
+
+.navegacion__fija--item:last-child {
+  border-right: none
+}
+
+.navegacion__fija--link {
+  display: block;
+  color: var(--secundary-color-dark);
+  text-decoration: none;
+  font-family: "CreatoDisplay-Light",'Times New Roman', Times, serif;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  transition: background-color, box-shadow .3s ease;
+  font-size: clamp(0.8rem, 3vw, 1.2rem);
+}
+
+.navegacion__fija--link:hover {
+  background-color: var(--secundary-color);
+  padding: 3px 6px;
+  border-radius: 10px;
+  box-shadow: 0 0 5px var(--secundary-color-dark);
+}
+
+.espaciador {
+  height: 80px;
+}
+
+.contanto__fijo--WhatsApp {
+  position: fixed;
+  bottom: 20px;
+  right: 0;
+  height: 50px;
+  width: 200px;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  padding: 0 10px;
+  box-sizing: border-box;
+  border: 2px solid #25d366;
+  border-radius:  25px 0 0 25px;
+  box-shadow: 0 0 15px #25d366;
+  transition: all ease .5s;
+  text-decoration: none;
+  cursor: url(../img/cursor__pointer.webp);
+}
+
+.contanto__fijo--WhatsApp:hover {
+  transform: translate(-5px, -10px);
+}
+
+.fijo__WhatsApp--icon {
+  width: 40px;
+  padding: 0 10px 0 2px;
+} 
+
+.fijo__WhatsApp--link {
+  color: #065623;
+  font-family: "CreatoDisplay-Light";
+  font-weight: bold;
+}
