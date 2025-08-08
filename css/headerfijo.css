@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 .header__fijo {
   background-color: var(--primary-color);
   position: fixed;
@@ -11,6 +15,7 @@
   justify-content: space-between;
   padding: 0 10px;
   box-sizing: border-box;
+  min-height: 80px;
 }
 
 .header__fijo--marca {
@@ -19,8 +24,8 @@
 }
 
 .header__fijo--logo {
-  width: 60px;
-  margin: 0 15px;
+  width: clamp(30px, 14.06vw, 60px);
+  margin: 5px 15px;
 }
 
 .header__fijo--nombre {
@@ -37,16 +42,24 @@
   list-style: none;
   display: inline-block;
   padding: 0; 
+  margin: 0;
+  margin-bottom: 5px;
 }
 
 .navegacion__fija--item {
   display: inline-block;
-  padding: 10px;
   border-right: 1px solid var(--primary-color-dark);
+  padding: 0 clamp(0px,3vw,20px);
+}
+
+.navegacion__fija--item:first-child {
+  margin: 0;
 }
 
 .navegacion__fija--item:last-child {
-  border-right: none
+  padding-right: none;
+  border-right: none;
+  margin: 0;
 }
 
 .navegacion__fija--link {
@@ -54,21 +67,19 @@
   color: var(--secundary-color-dark);
   text-decoration: none;
   font-family: "CreatoDisplay-Light",'Times New Roman', Times, serif;
-  letter-spacing: 5px;
   text-transform: uppercase;
   transition: background-color, box-shadow .3s ease;
-  font-size: clamp(0.8rem, 3vw, 1.2rem);
+  font-size: clamp(0.7rem, 3vw, 1.2rem);
+  margin: 0 30px;
+}
+
+.navegacion__fija--link:last-child {
+  margin: 0;
 }
 
 .navegacion__fija--link:hover {
   background-color: var(--secundary-color);
-  padding: 3px 6px;
-  border-radius: 10px;
   box-shadow: 0 0 5px var(--secundary-color-dark);
-}
-
-.espaciador {
-  height: 80px;
 }
 
 .contanto__fijo--WhatsApp {
