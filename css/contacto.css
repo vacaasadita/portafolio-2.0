@@ -15,7 +15,7 @@
 
 .contacto__formulario {
   background-color: transparent;
-  max-width: 350px;
+  max-width: 500px;
   margin: auto;
   box-shadow: 0 0 7px var(--secundary-color-dark);
   border-radius: 20px;
@@ -98,4 +98,5 @@
   font-weight: bold;
   color: var(--primary-color);
   cursor: url(../img/cursor__pointer.webp) ,pointer;
+
 } 
