@@ -1,16 +1,19 @@
+* {
+  box-sizing: border-box;
+}
+
 .contacto {
   box-sizing: border-box;
   background-color: var(--secundary-color);
   margin: 0;
   box-sizing: border-box;
+  padding-top: 160px;
 }
 
 .contacto__contenido {
-  min-height: calc(100vh - 80px);
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
+  padding: 20px;
 }
 
 .contacto__formulario {
@@ -19,9 +22,6 @@
   margin: auto;
   box-shadow: 0 0 7px var(--secundary-color-dark);
   border-radius: 20px;
-  height: 70vh;
-  overflow: auto;
-  scrollbar-width: none;
 }
 
 .formulario__grupo {
@@ -29,15 +29,14 @@
 }
 
 .formulario__input, .formulario__textarea {
-  width: 100%;
+  min-width: 100%;
   box-sizing: border-box;
-  padding: 6px 12px;
-  border: 1px solid #4f9;
+  padding: 3px 6px;
+  border: 1px solid var(--primary-color-dark);
   box-shadow: 0 0 5px #0002;
   background-color: transparent;
   border-radius: 4px;
   color: #ddd;
-  padding: 10px;
 }
 
 .formulario__input::placeholder, .formulario__textarea::placeholder {
@@ -58,7 +57,7 @@
 }
 
 .formulario__label {
-  font-size: clamp(1rem,5vw,1.3rem);
+  font-size: clamp(0.8rem,5vw,1.3rem);
   line-height: 2.2;
   color: var(--secundary-color-dark);
 }
@@ -67,7 +66,7 @@
   border-radius: 10px;
   border: 1px solid #666;
   padding: 10px 7px 20px 7px;
-  margin: 20px;
+  margin: 15px;
 }
 
 .formulario__legend {
@@ -85,12 +84,13 @@
   display: block;
   margin: auto;
   padding: 5px 15px;
-  font-size: clamp(1rem,5vw,1.4rem);
+  font-size: clamp(1rem,3.5vw,1.3rem);
   border-radius: 10px;
   outline: none;
   background-color: var(--primary-color);
   color: var(--secundary-color-dark);
   text-transform: uppercase;
+  font-family: "CreatoDisplay-Light";
 }
 
 .formulario__boton:hover {
@@ -98,5 +98,5 @@
   font-weight: bold;
   color: var(--primary-color);
   cursor: url(../img/cursor__pointer.webp) ,pointer;
-
+  font-family: "CreatoDisplay-Black";
 } 
